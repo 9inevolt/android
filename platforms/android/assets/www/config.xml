@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gg.destiny.app.chat" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="gg.destiny.app.chat" version="1.1" android-versionCode="5"
+        xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Destiny</name>
     <description>
         Chat and viewer app for Destiny.gg
@@ -12,7 +13,7 @@
     <!-- weinre debugger -->
     <!-- <access origin="10.0.3.2:*" /> -->
 
-    <content src="http://www.destiny.gg/embed/chat" />
+    <content src="chat-lite.html" />
 
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
@@ -30,5 +31,4 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <icon src="icon.png" />
 </widget>

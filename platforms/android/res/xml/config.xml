@@ -1,10 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gg.destiny.app.chat" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Destiny - Chat</name>
-    <description>
-        Chat app for Destiny.gg
-    </description>
+<widget android-versionCode="5" id="gg.destiny.app.chat" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidLaunchMode" value="singleTop" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
@@ -20,7 +17,7 @@
     </description>
     <access origin="http://127.0.0.1*" />
     <access origin="*://*.destiny.gg/*" subdomains="true" />
-    <content src="http://www.destiny.gg/embed/chat" />
+    <content src="chat-lite.html" />
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
@@ -37,5 +34,4 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <icon src="icon.png" />
 </widget>

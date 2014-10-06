@@ -28,9 +28,7 @@ public class ChatActivity extends Activity implements CordovaInterface
         setContentView(R.layout.chat);
         Config.init(this);
         webView = (CordovaWebView) findViewById(R.id.web_view);
-        //webView.loadUrl(Config.getStartUrl());
-        //webView.loadUrl("file:///android_asset/www/chat2.html");
-        webView.loadUrl("file:///android_asset/www/chat-lite.html");
+        webView.loadUrl(Config.getStartUrl());
 
         if (savedInstanceState == null) {
             warningCheck();

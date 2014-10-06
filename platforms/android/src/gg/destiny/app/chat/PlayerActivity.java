@@ -71,10 +71,9 @@ public class PlayerActivity extends Activity implements CordovaInterface, OnFull
         webView = (CordovaWebView) findViewById(R.id.web_view);
         webOffline = findViewById(R.id.web_offline);
         webLoading = findViewById(R.id.web_loading);
-        //webView.loadUrl(Config.getStartUrl());
         // This will cause reload on rotation if we don't handle the configChanges
         // But webview can't save display state properly
-        webView.loadUrl("file:///android_asset/www/chat-lite.html");
+        webView.loadUrl(Config.getStartUrl());
 
         App.getChannelPreferenceHelper().addListener(this);
         App.getNotificationPreferenceHelper().addListener(this);

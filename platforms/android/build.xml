@@ -65,8 +65,9 @@
             -post-package
             -post-build
             -pre-clean
-    -->
+    Commented because it breaks cli ant build
     <import file="custom_rules.xml" optional="true" />
+    -->
 
     <!-- Import the actual build file.
 

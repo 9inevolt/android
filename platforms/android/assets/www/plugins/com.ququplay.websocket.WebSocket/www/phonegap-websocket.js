@@ -1,4 +1,4 @@
-cordova.define("com.ququplay.websocket.WebSocket.websocket", function(require, exports, module) {var exec = require('cordova/exec');
+cordova.define("com.ququplay.websocket.WebSocket.websocket", function(require, exports, module) { var exec = require('cordova/exec');
 
 function hasWebSocket() {
   var m = /Android ([0-9]+)\.([0-9]+)/i.exec(navigator.userAgent);
@@ -223,5 +223,6 @@ hasWebSocket() || (function() {
 if (typeof module != 'undefined' && module.exports) {
   module.exports = window.WebSocket;
 }
+
 
 });
