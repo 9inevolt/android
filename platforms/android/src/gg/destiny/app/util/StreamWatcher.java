@@ -246,7 +246,7 @@ public class StreamWatcher
             {
                 extm3u playlist = null;
                 try {
-                    String sPlaylist = KrakenApi.getPlaylist(channel.getName());
+                    String sPlaylist = KrakenApi.getPlaylist2(channel.getName());
 //                    Log.d(TAG, "playlist: " + sPlaylist);
                     playlist = extm3uParser.a(sPlaylist);
 
